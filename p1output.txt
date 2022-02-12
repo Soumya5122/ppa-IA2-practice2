@@ -89,14 +89,14 @@ input (base=0x7fff752e79ec, height=0x7fff752e79f0) at p1original.c:5
 Enter the base and height of the triangle:
 6     scanf("%f%f", base, height);
 (gdb) 
-4 8
+2 1
 7   }
 (gdb) 
 main () at p1original.c:24
 24    find_area(base, height, &area);
 (gdb) i lo
-base = 4
-height = 8
+base = 2
+height = 1
 area = 4.59163468e-41
 (gdb) s
 find_area (base=4, height=8, area=0x7fff752e79f4) at p1original.c:11
@@ -109,14 +109,14 @@ No locals.
 main () at p1original.c:25
 25    output(base, height, area);
 (gdb) i lo
-base = 4
-height = 8
-area = 16
+base = 2
+height = 1
+area = 1
 (gdb) s
 output (base=4, height=8, area=16) at p1original.c:16
 16    printf("The area of the triangle with base %f and height %f is %f\n", base, height, area);
 (gdb) n
-The area of the triangle with base 4.000000 and height 8.000000 is 16.000000
+The area of the triangle with base 2.000000 and height 1.000000 is 1.000000
 17  }
 (gdb) n
 main () at p1original.c:26
