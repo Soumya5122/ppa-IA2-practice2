@@ -9,30 +9,28 @@ int input_side()
 int check_scalence(int a,int b,int c)
 {
   
-  if a!=b && a!=c;
+  if (a!=b && b!=c && c!=a)
+  {
+    printf("is  not a triangle\n");
+  }
   
-  
-  else if b!=a && b!=c;
-  
-  
-  if c
+  else
    {
-     return scalence;
-   }
+     printf("it is  a triangle");
+       }
+     return 0;
+   
 }
 
-void output(int a,int b,int c,int scalence)
+void output(int a,int b,int c,int n)
 {
-  printf("among of these any sides are not egual to eachother\n",a,b,c,*scalence);
+  printf("the sides are not equal %d \n",a,b,c, n);
 }
 
 int main()
 {
-  intput_side(a,b,c);
-  input a();
-  input b();
-  input c();
-  result check_scalence side(a,b,c);
-  output(result);
+  int a,b ,c ,n;
+  input_side(a,b,c);
+  output(a,b,c,n);
   return 0;
 }
