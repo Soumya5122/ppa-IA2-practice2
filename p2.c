@@ -18,6 +18,8 @@ int check_scalence(int a,int b,int c)
   {
     printf("is a triangle");
   }
+  return 0;
+  }
 void output(int a,int b,int c,int isscalence)
 {
   printf("the sides are not equal %d\n",a,b,c,isscalence);
