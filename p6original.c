@@ -8,18 +8,16 @@ void input_string(char *a)
 
 void str_reverse(char str, char rev_str)
 {
-  int n;
-  for (n = 0; str[n]; n++);
-  n--;
-  int i;
-  for (i = 0; str[i]; i++)
-  {
-    rev_str[i] = str[n];
-    n--;
+ int i,j;
+  for(i=0;a[i]="\0";i++)
+    {}
+  for(j=0;j<i;j++)
+    {
+      b[i]==a[i];
+      --i;
+    }
+  b[i]='\0';
   }
-  rev_str[i] = '\0';
-}
-
 void output(char a, char reverse_a)
 {
   printf("The reverse of %s is %s\n", a, reverse_a);
