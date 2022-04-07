@@ -11,23 +11,21 @@ int input()
 // Using Euclidean algorithm
 int gcd(int a, int b)
 {
-    int large = a > b ? a : b;
-    int small = a < b ? a : b;
-    int i = 1;
-    int rem = 1;
-
-    while (rem)
+    int s;
+    if(a<b)
     {
-        rem = large - i * small;
-        if (rem < small)
-        {
-            large = small;
-            small = rem;
-            i = 0;
-        }
-        i++;
+      s=a;
     }
-    return large;
+  else
+    {
+      s=b;
+    }
+  for(int i=s;i>=n;i--)
+    {
+      (a%i!==0 && b%i!==0);
+      break;
+    }
+  return i;
 }
 
 void output(int a, int b, int gcd)
